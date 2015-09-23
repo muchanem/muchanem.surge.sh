@@ -8,7 +8,7 @@ harp compile
 [ $? -ne 0 ] && exit 1
 
 
-surge www -d muchanem.surge.sh
+surge www
 [ $? -ne 0 ] && exit 1
 exit 0
 
