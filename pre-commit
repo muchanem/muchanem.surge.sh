@@ -7,6 +7,10 @@
 harp compile
 [ $? -ne 0 ] && exit 1
 
-surge www
+cp www/index.html index.html
+[ $? -ne 0 ] && exit 1 
+
+surge -d muchanem.surgw.sh
 [ $? -ne 0 ] && exit 1
 exit 0
+
