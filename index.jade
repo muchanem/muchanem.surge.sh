@@ -183,11 +183,30 @@ html(lang='en')
     .section.translucent-bg.bg-image-1.blue
       .container.object-non-visible(data-animation-effect='fadeIn')
         h1#services.text-center.title My Blog
-        .space
-        .row
-          .col-sm-6
-            .media
-              .image-box
+                  .separator
+        p.lead.text-center
+          | Lorem ipsum dolor sit amet laudantium molestias similique.
+          br
+          |  Quisquam incidunt ut laboriosam.
+        br
+        .row.object-non-visible(data-animation-effect='fadeIn')
+          .col-md-12
+            // isotope filters start
+            .filters.text-center
+              ul.nav.nav-pills
+                li.active
+                  a(href='#', data-filter='*') All
+                li
+                  a(href='#', data-filter='.web-design') Web design
+                li
+                  a(href='#', data-filter='.app-development') App development
+                li
+                  a(href='#', data-filter='.site-building') Site building
+            // isotope filters end
+            // portfolio items start
+            .isotope-container.row.grid-space-20
+              .col-sm-6.col-md-3.isotope-item.web-design
+                .image-box
                   .overlay-container
                     img(src='images/portfolio-1.jpg', alt='')
                     a.overlay(data-toggle='modal', data-target='#project-1')
@@ -207,15 +226,344 @@ html(lang='en')
                         h3 Project Description
                         .row
                           .col-md-6
-                            p   
-                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae 
-                            p   
-                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi opt
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
                           .col-md-6
                             img(src='images/portfolio-1.jpg', alt='')
                       .modal-footer
                         button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
                 // Modal end
+              .col-sm-6.col-md-3.isotope-item.app-development
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-2.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-2')
+                      i.fa.fa-search-plus
+                      span App Development
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-2') Project Title
+                // Modal
+                #project-2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-2-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-2-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-2.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.web-design
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-3.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-3')
+                      i.fa.fa-search-plus
+                      span Web Design
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-3') Project Title
+                // Modal
+                #project-3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-3-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-3-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-3.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.site-building
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-4.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-4')
+                      i.fa.fa-search-plus
+                      span Site Building
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-4') Project Title
+                // Modal
+                #project-4.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-4-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-4-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-4.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.app-development
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-5.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-5')
+                      i.fa.fa-search-plus
+                      span App Development
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-5') Project Title
+                // Modal
+                #project-5.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-5-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-5-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-5.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.web-design
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-6.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-6')
+                      i.fa.fa-search-plus
+                      span Web Design
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-6') Project Title
+                // Modal
+                #project-6.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-6-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-6-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-6.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.site-building
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-7.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-7')
+                      i.fa.fa-search-plus
+                      span Site Building
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-7') Project Title
+                // Modal
+                #project-7.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-7-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-7-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-7.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.web-design
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-8.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-8')
+                      i.fa.fa-search-plus
+                      span Web Design
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-8') Project Title
+                // Modal
+                #project-8.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-8-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-8-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-8.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.web-design
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-9.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-9')
+                      i.fa.fa-search-plus
+                      span Web Design
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-9') Project Title
+                // Modal
+                #project-9.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-9-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-9-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-9.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.site-building
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-10.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-10')
+                      i.fa.fa-search-plus
+                      span Site Building
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-10') Project Title
+                // Modal
+                #project-10.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-10-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-10-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-10.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.web-design
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-11.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-11')
+                      i.fa.fa-search-plus
+                      span Web Design
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-11') Project Title
+                // Modal
+                #project-11.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-11-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-11-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-11.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
+              .col-sm-6.col-md-3.isotope-item.app-development
+                .image-box
+                  .overlay-container
+                    img(src='images/portfolio-12.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-12')
+                      i.fa.fa-search-plus
+                      span App Development
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-12') Project Title
+                // Modal
+                #project-12.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-12-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-12-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
+                            p
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                          .col-md-6
+                            img(src='images/portfolio-12.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
     // section end
     // section start
     // ================
