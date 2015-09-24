@@ -187,6 +187,35 @@ html(lang='en')
         .row
           .col-sm-6
             .media
+              .image-box
+                  .overlay-container
+                    img(src='images/portfolio-1.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#project-1')
+                      i.fa.fa-search-plus
+                      span Web Design
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-1') Project Title
+                // Modal
+                #project-1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-1-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#project-1-label.modal-title Project Title
+                      .modal-body
+                        h3 Project Description
+                        .row
+                          .col-md-6
+                            p   
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae 
+                            p   
+                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi opt
+                          .col-md-6
+                            img(src='images/portfolio-1.jpg', alt='')
+                      .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
     // section end
     // section start
     // ================
