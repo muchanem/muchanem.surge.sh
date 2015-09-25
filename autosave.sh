@@ -2,5 +2,5 @@
 
 while true; do
   save
-  sleep 30s
+  sleep 10s
 done
