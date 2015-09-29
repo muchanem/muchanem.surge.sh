@@ -101,24 +101,24 @@ html(lang='en')
               h1.text-center
                 | Welcome to 
                 span My Website
-              p.lead.text-center
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos debitis provident nulla illum minus enim praesentium repellendus ullam cupiditate reiciendis optio voluptatem, recusandae nobis quis aperiam, sapiente libero ut at.
+              lead.text-center
+                script.
+                (function() {
+                var cx = '014349456243049375699:y2a-2gmnvs4';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+                })();
+                gcse:search
     // banner end
     // section start
     // ================
 
-script.
-  (function() {
-  var cx = '014349456243049375699:y2a-2gmnvs4';
-  var gcse = document.createElement('script');
-  gcse.type = 'text/javascript';
-  gcse.async = true;
-  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-  '//cse.google.com/cse.js?cx=' + cx;
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(gcse, s);
-  })();
-gcse:search
+
 
 
     .section.clearfix.object-non-visible(data-animation-effect='fadeIn')
