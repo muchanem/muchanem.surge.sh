@@ -51,8 +51,33 @@ html(lang='en')
                   a(href='#banner') Muchanem
                 .site-slogan
                   | My Website by
-                  a(target='_blank', href='http://muchanem.surge.sh')  muchanem
-            // header-left end
+                  muchanem
+    table(cellpadding='0', cellspacing='0', border='0')
+      tr
+        td(style='font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;')
+          center
+            table(width='90%', cellpadding='0', cellspacing='0', border='0', style='font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;')
+              tr
+                td(style='font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;', align='center')
+                  a(href='http://www.freefind.com/searchtipspop.html', target='searchtips', onclick="somewin=window.open('http://www.freefind.com/searchtipspop.html', 'searchtips','resizable=yes,scrollbars=yes,width=508,height=508')") search tips
+                td(style='font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;', align='right')
+                  a(href='http://search.freefind.com/find.html?si=82906321&pid=a') advanced search
+          form(style='margin:0px; margin-top:4px;', action='http://search.freefind.com/find.html', method='get', accept-charset='utf-8', target='_self')
+            input(type='hidden', name='si', value='82906321')
+            input(type='hidden', name='pid', value='r')
+            input(type='hidden', name='n', value='0')
+            input(type='hidden', name='_charset_', value='')
+            input(type='hidden', name='bcd', value='÷')
+            input(type='text', name='query', size='15')
+            input(type='submit', value='search')
+      tr
+        td(style='text-align:center; font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt; padding-top:4px;')
+          a(style='text-decoration:none; color:gray;', href='http://www.freefind.com') site search
+          a(style='text-decoration:none; color:gray;', href='http://www.freefind.com')
+            | by
+            span(style='color: #606060;') freefind
+ 
+           // header-left end
           .col-md-8
             // header-right start
             // ================
@@ -1132,10 +1157,17 @@ html(lang='en')
           .row
             .col-md-12
               p.text-center
-                | Copyright © 2014 Worthy by 
-                a(target='_blank', href='http://htmlcoder.me') HtmlCoder
-                | .
-      // .subfooter end
+              <p> Copyright [yyyy] [name of copyright owner]
+
+              Licensed under the Apache License, Version 2.0 (the "License");
+              you may not use this file except in compliance with the License.
+
+              Unless required by applicable law or agreed to in writing, software
+              distributed under the License is distributed on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+              See the License for the specific language governing permissions and
+              limitations under the License. </p> 
+// .subfooter end
     // footer end
     //
       JavaScript files placed at the end of the document so the pages load faster
