@@ -565,13 +565,33 @@ html(lang='en')
                 <i class="fa fa-flask"></i>
               .media-body
                  a.h3.media-heading(data-target='#science') Science
+                           // Modal
+                #science.modal.fade(tabindex='-1', role='dialog', aria-labelledby='blog-1-label', aria-hidden='true')
+                  .modal-dialog.modal-lg
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#science-label.modal-title Science Work
+                      .modal-body
+                        h3 Green = done Orange = WIP Red = havent started
+                        .row
+                          .col-md-6
+                          a(href='http://www.w3schools.com/html/') button.btn.btn-success(type='button') Stuff 1
+                          .col-md-6
+                         a(href='http://www.w3schools.com/html/') button.btn.btn-success(type='button') Stuff 2 
+                         .modal-footer
+                        button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+                // Modal end
           .col-md-4
             .media.testimonial
               .media-left
                 <i class="fa fa-globe"></i>
               .media-body
-                h3.media-heading Scoial Studies
-          .col-md-4
+                .h3.media-heading(data-target='#ss') Scoial Studies
+          
+              .col-md-4
             .media.testimonial
               .media-left
                 <i class="fa fa-book"></i>
