@@ -6,3 +6,8 @@
 p {
   font-family: 'Montserrat'    
 }
+
+
+.backspace { 
+  margin-left: -4px; 
+}
