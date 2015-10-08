@@ -254,30 +254,27 @@ html(lang='en')
               .col-sm-6.col-md-3.isotope-item.web-design
                 .image-box
                   .overlay-container
-                    img(src='images/portfolio-3.jpg', alt='')
+                    img(src='images/blog-3.jpg', alt='')
                     a.overlay(data-toggle='modal', data-target='#project-3')
                       i.fa.fa-search-plus
                       span Web Design
-                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-3') Project Title
+                  a.btn.btn-default.btn-block(data-toggle='modal', data-target='#blog-3') Freewrite 3
                 // Modal
-                #project-3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-3-label', aria-hidden='true')
+                #blog-3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='blog-3-label', aria-hidden='true')
                   .modal-dialog.modal-lg
                     .modal-content
                       .modal-header
                         button.close(type='button', data-dismiss='modal')
                           span(aria-hidden='true') ×
                           span.sr-only Close
-                        h4#project-3-label.modal-title Project Title
+                        h4#blog-3-label.modal-title Freewrite 3
                       .modal-body
                         h3 Project Description
                         .row
                           .col-md-6
-                            p
-                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
-                            p
-                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                            include ./blog/blog-3.md  
                           .col-md-6
-                            img(src='images/portfolio-3.jpg', alt='')
+                            img(src='images/blog-3.jpg', alt='')
                       .modal-footer
                         button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
                 // Modal end
@@ -561,7 +558,6 @@ html(lang='en')
           .col-md-4
             .media.testimonial
               .media-left
-               a(href='google.com')
                i.fa.fa-flask   
               
                .media-body
