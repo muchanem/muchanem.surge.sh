@@ -335,13 +335,13 @@ html(lang='en')
               .col-sm-6.col-md-3.isotope-item.web-design
                 .image-box
                   .overlay-container
-                    img(src='images/portfolio-6.jpg', alt='')
-                    a.overlay(data-toggle='modal', data-target='#project-6')
+                    img(src='images/blog-6.jpg', alt='')
+                    a.overlay(data-toggle='modal', data-target='#blog-6')
                       i.fa.fa-search-plus
-                      span Web Design
+                      span Freewrite 6
                   a.btn.btn-default.btn-block(data-toggle='modal', data-target='#project-6') Project Title
                 // Modal
-                #project-6.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-6-label', aria-hidden='true')
+                #blog-6.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-6-label', aria-hidden='true')
                   .modal-dialog.modal-lg
                     .modal-content
                       .modal-header
@@ -353,12 +353,9 @@ html(lang='en')
                         h3 Project Description
                         .row
                           .col-md-6
-                            p
-                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
-                            p
-                              | Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
+                            include ./blogs/blog-6.md  
                           .col-md-6
-                            img(src='images/portfolio-6.jpg', alt='')
+                            img(src='blog-6.jpg', alt='')
                       .modal-footer
                         button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
                 // Modal end
